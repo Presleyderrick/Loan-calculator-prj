@@ -1,0 +1,41 @@
+Explanation of the Calculations:
+
+1. Amortized Loan Calculation:
+   The formula for the monthly payment on an amortized loan is:
+   
+   M = P × r / (1 - (1 + r)^-n)
+   
+   Where:
+   - M is the monthly payment
+   - P is the principal (loan amount)
+   - r is the periodic interest rate (annual rate divided by number of periods per year)
+   - n is the number of payments (total months)
+
+2. Deferred Payment Loan Calculation:
+   The formula for calculating the total amount due after the loan term is:
+   
+   A = P × (1 + r)^n
+   
+   Where:
+   - A is the amount due at maturity
+   - P is the principal (loan amount)
+   - r is the annual interest rate divided by the number of periods (compound frequency)
+   - n is the total number of periods (total months)
+
+3. Bond Loan Calculation:
+   The formula for the present value of a bond (amount received at the start of the loan) is:
+   
+   PV = P / (1 + r)^n
+   
+   Where:
+   - PV is the present value (amount received)
+   - P is the total due amount (principal)
+   - r is the monthly interest rate (annual rate divided by 12)
+   - n is the total number of periods (total months)
+
+Result Structures:
+1. AmortizedLoanResult: Contains the payment per period, total payments, and total interest.
+2. DeferredLoanResult: Contains the total amount due at loan maturity and total interest.
+3. BondLoanResult: Contains the amount received at the start of the loan and total interest.
+
+Each method in the LoanUtils class is designed to calculate the relevant loan type based on the data passed in LoanRequestDTO and return the result in the appropriate format. The helper function getAdjustedRate handles the logic for calculating the interest rate based on the compound frequency selected.

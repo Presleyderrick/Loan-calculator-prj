@@ -1,0 +1,51 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Build directories
+/target/
+/build/
+
+# IntelliJ IDEA
+.idea/
+/*.iml
+
+# Eclipse
+/.classpath
+/.project
+/.settings/
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Maven
+/.mvn/
+/mvnw
+/mvnw.cmd
+
+# Gradle
+/.gradle/
+/gradlew
+/gradlew.bat
+
+# Spring Boot
+spring-boot-devtools.jar
+
+# Docker
+docker-compose.override.yml
+Dockerfile*
+
+# IntelliJ project files
+.idea/
+
+# MacOS Finder
+.FinderInfo
